@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgrey;
+}
+
+.header {
+  background-color: #9f01c6;
+  padding: 1em;
+  border-style: inset;
+  border-color: black;
+}
+
+h1 {
+  align-self: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+  color: white;
+}
+
+.menu > li {
+  display: grid;
+  padding: 0.5em;
+}
+
+.input {
+  display: grid;
+  padding: 0.5em;
+}
+
+.del {
+  display: grid;
+  padding: 0.25em;
+}
+
+.del > button {
+  font-size: xx-large;
+}
+
+.content {
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: lightgray;
+}
+
+.todos {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos > li {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  border-style: solid;
+  border-color: black;
+  border-top-style: none;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  border-style: inset;
+  border-color: black;
+  border-top-style: none;
+}
+
+.top > * {
+  padding: 0.5em;
+}
+
+.todos > li > * {
+  padding: 0.5em;
+}
+
+.name {
+  background-color: #9f01c6;
+  color: white;
+}
+
+.task {
+  border-right-style: solid;
+  border-right-color: darkgray;
+}
+
+.add_todo {
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: 15% 60% 15%;
+  column-gap: 5%;
+  background-color: black;
+  border-top-style: none;
+  color: white;
+  font-size: x-small;
+}
+
+.add_todo_error {
+  color: red;
+  font-style: italic;
+  background-color: darkgray;
+}

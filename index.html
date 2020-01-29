@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="menu">
+        <li>
+          <h1>todos:</h1>
+        </li>
+        <li>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="search todos..."
+              id="search_field"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="del">
+            <button type="button" id="del_btn">␡</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <ul class="todos" , id="todo_list"></ul>
+      <div class="add_todo">
+        <input type="text" id="todo_name" placeholder="name" />
+        <input type="text" id="todo_field" placeholder="task" />
+        <button type="button" id="todo_btn">✚</button>
+      </div>
+      <div class="add_todo_error" id="todo_error"></div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
